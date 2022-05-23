@@ -1,1 +1,56 @@
 // Specific CSS for your home-page
+
+body{
+  background-color:rgba($color: #F9EBC8, $alpha: 0.6);
+}
+
+.banner {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/178/873/original/connections-dots-banner-vector.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: #A0BCC2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: #A0BCC2;
+  opacity: 1;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight:200;
+}
+
+.banner  a{
+  background-color: rgba($color: #F9EBC8, $alpha: 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  transition: 1s;
+  color: black;
+
+}
+
+.banner a :hover {
+    color: #DAE5D0;
+}
+
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: rgba($color: #F9EBC8, $alpha: 1);
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
