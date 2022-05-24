@@ -2,8 +2,13 @@
 <p><%= @friend.location %></p>
 <p><%= @friend.price %></p>
 
-<%= link_to "Homepage", friends_path%>
-<%= link_to "Edit", edit_friend_path%>
+
+<%= link_to "Homepage", friends_path(@friend)%>
+<%= link_to "Edit", edit_friend_path(@friend)%>
+<%= link_to "Leave a review", new_friend_review_path(@friend) %>
+<%= link_to "update a review", edit_friend_review_path(@friend) %>
+
+
 
 
 <% @friends.each do |friend| %>
@@ -11,3 +16,6 @@
     <%= link_to "Update", edit_friend_path(friend) %>
   <% end %>
 <% end %>
+             
+
+
