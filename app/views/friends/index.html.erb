@@ -1,0 +1,12 @@
+<h1>My lovely firends 🍌</h1>
+
+<ul>
+<% @friends.each do |friend| %>
+<li><%= link_to friend.description, friend_path(friend) %> -- <%= link_to "Delete", dell_path(friend),
+                                                  method: :delete,
+                                                  data: { confirm: "Are you sure?" } %> </li>
+<%end %>
+</ul>
+
+
+<%# WILL HAVE TO CHNAGE FRIEND.DECRIPTION INTO FRIENDS.NAME %>
