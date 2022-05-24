@@ -1,6 +1,6 @@
 class FriendsController < ApplicationController
   def index
-    @friends = Friend.all
+    @friends = policy_scope(Friend).order(created_at: :desc)
   end
 
   def show
@@ -9,11 +9,13 @@ class FriendsController < ApplicationController
 
   def new
     @friend = Friend.new
+    authorize @friend
   end
 
   def create
     @friend = Friend.new(friend_params)
     @friend.save
+    authorize @friend
     redirect_to friends_path
   end
 
@@ -24,12 +26,14 @@ class FriendsController < ApplicationController
   def update
     @friend = Friend.find(params[:id])
     @friend.update(friend_params)
+    authorize @friend
     redirect_to friends_path
   end
 
   def destroy
     @friend = Friend.find(params[:id])
     @friend.destroy
+    authorize @friend
     redirect_to friends_path
   end
 
