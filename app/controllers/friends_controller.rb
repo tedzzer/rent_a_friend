@@ -16,7 +16,7 @@ class FriendsController < ApplicationController
     @friend = Friend.new(friend_params)
     @friend.save
     authorize @friend
-    redirect_to friend_path(@friend)
+    redirect_to friends_path
   end
 
   def edit
