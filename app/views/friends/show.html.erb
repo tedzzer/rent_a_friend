@@ -4,3 +4,10 @@
 
 <%= link_to "Homepage", friends_path%>
 <%= link_to "Edit", edit_friend_path%>
+
+
+<% @friends.each do |friend| %>
+  <% if policy(friend).edit? %>
+    <%= link_to "Update", edit_friend_path(friend) %>
+  <% end %>
+<% end %>
