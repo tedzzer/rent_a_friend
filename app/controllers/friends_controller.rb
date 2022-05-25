@@ -26,10 +26,13 @@ class FriendsController < ApplicationController
 
   def edit
     @friend = Friend.find(params[:id])
+    authorize @friend
+
   end
 
   def update
     @friend = Friend.find(params[:id])
+    @friend.user = current_user
     @friend.update(friend_params)
     authorize @friend
     redirect_to friends_path
