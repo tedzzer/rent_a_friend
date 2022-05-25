@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
+            <%= link_to "Log in", new_user_session_path, class: "btn btn-outline-primary" %>
           </li>
           <li class="nav-item">
-             <%= link_to "Log in", new_user_session_path, class: "Login" %>
-             <%= link_to "Sign up", new_user_registration_path, class: "Sign-up" %>
+             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-outline-primary" %>
           </li>
           <li class="nav-item dropdown">
             <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
