@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgKKtbJ6TvVD2MxSE7n3iJsWF9gXJDXZWUQ&usqp=CAU" /> Rent-a-Friend
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,10 +10,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Log in</a>
+
+             <%= link_to "Log in", new_user_session_path, class: "Login" %>
+             <%= link_to "Sign up", new_user_session_path, class: "Sign-up" %>
           </li>
           <li class="nav-item dropdown">
             <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
@@ -24,8 +25,6 @@
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
       </ul>
     </div>
   </div>
