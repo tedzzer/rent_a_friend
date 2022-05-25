@@ -1,19 +1,47 @@
-<h1>My lovely firends 🍌</h1>
+<h1>Available friends</h1>
 
-<ul>
+<div class="container">
+  <div class="d-flex justify-content-between row">
+    <% @friends.each do |friend| %>
+      <%#= link_to friend_path(friend) do %>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">friend name to implement</h5>
+            <h5 class="card-title"><%=friend.description%></h5>
+            <p class="card-text"><%=friend.location%></p>
+            <p class="card-text"><%=friend.price%></p>
+
+            <a href="#" class="btn btn-light"><%= link_to "Delete", friend_path(friend),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+            </a>
+            <a href="#" class="btn btn-primary">
+              <% if policy(friend).edit? %>
+                <%= link_to "Update", edit_friend_path(friend) %>
+              <% end %>
+            </a>
+            <%= link_to "Friend", friend_path(friend), class: "btn btn-primary" %>
+          </div>
+        </div>
+      <%# end %>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+<%# <ul>
 <% @friends.each do |friend| %>
-<li><%= link_to friend.description, friend_path(friend) %> -- <%= link_to "Delete", dell_path(friend),
-                                                  method: :delete,
-                                                  data: { confirm: "Are you sure?" } %> </li>
-</ul>
+<%# <li><%= link_to friend.description, friend_path(friend) -- <%= link_to "Delete", friend_path(friend), %>
+                                                  <%# # method: :delete, %>
+                                                  <%# # data: { confirm: "Are you sure?" } </li> %>
+<%# </ul>  %>
 
-  <% if policy(friend).edit? %>
-    <%= link_to "Update", edit_friend_path(friend) %>
-  <% end %>
   <%# WILL HAVE TO CHNAGE FRIEND.DECRIPTION INTO FRIENDS.NAME %>
 
 
-<%end %>
 
   <% if policy(Friend).create? %>
     <%= link_to "New friend", new_friend_path %>
