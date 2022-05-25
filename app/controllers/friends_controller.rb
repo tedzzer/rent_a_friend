@@ -18,7 +18,7 @@ class FriendsController < ApplicationController
     @friend.user = current_user
     authorize @friend
     if @friend.save!
-    redirect_to friends_path
+      redirect_to friends_path
     else
       render :new
     end

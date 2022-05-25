@@ -14,8 +14,11 @@
     <%= link_to "Leave a review", new_friend_review_path(@friend) %>
   </div>
 
-  <%= link_to "Homepage", friends_path(@friend)%>
-</div>
+
+<%= link_to "Homepage", friends_path(@friend)%>
+<%= link_to "Edit", edit_friend_path(@friend)%>
+<%= link_to "Leave a review", new_friend_review_path(@friend) %>
+<%= link_to "Update a review", edit_friend_review_path(@friend) %>
 
 
 
