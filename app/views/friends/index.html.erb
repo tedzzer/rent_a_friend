@@ -12,13 +12,13 @@
             <p class="card-text"><%=friend.location%></p>
             <p class="card-text"><%=friend.price%></p>
 
-            <a href="#" class="btn btn-light"><%= link_to "Delete", friend_path(friend),
+            <a><%= link_to "Delete", friend_path(friend), class: "btn btn-danger",
               method: :delete,
               data: { confirm: "Are you sure?" } %>
             </a>
-            <a href="#" class="btn btn-primary">
+            <a>
               <% if policy(friend).edit? %>
-                <%= link_to "Update", edit_friend_path(friend) %>
+                <%= link_to "Update", edit_friend_path(friend), class: "btn btn-warning" %>
               <% end %>
             </a>
             <%= link_to "Friend", friend_path(friend), class: "btn btn-primary" %>
