@@ -17,7 +17,7 @@ puts "Creating Data Base"
 meghan = User.new(name: "Meghan", email: "meghan.h.johnson@gmail.com", password: "Password1!", location: "Albania", age: "18")
 meghan.save!
 
-alex = Friend.new(description: "Nice friend!", location: "Albania", price:"100USD")
+alex = Friend.new(name: "Alex Rojon", description: "Nice friend!", location: "Albania", price:"100USD")
 alex.user = meghan
 alex.save!
 
