@@ -1,6 +1,18 @@
-<h2><%= @friend.description %></h2>
-<p><%= @friend.location %></p>
-<p><%= @friend.price %></p>
+<div class="container">
+  <h1><%= "@friend.name placeholder for now" %></h1>
+  <h2><%= @friend.description %></h2>
+  <div class="friend_images">
+    <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon">
+    <div class="friend_details">
+      <h4>Location: <%= @friend.location %></h4>
+      <p>Price to meet: <%= @friend.price %></p>
+      <%= link_to "Meet up with this friend!", new_friend_review_path(@friend) %>
+    </div>
+  </div>
+  <div class="friend_reviews">
+    <h4>Reviews for: <%= "@friend.name placeholder for now" %></h4>
+    <%= link_to "Leave a review", new_friend_review_path(@friend) %>
+  </div>
 
 
 <%= link_to "Homepage", friends_path(@friend)%>
@@ -10,9 +22,11 @@
 
 
 
+<%# <%= link_to "Update a review", edit_friend_review_path(@friend) %>
+<%# <%= link_to "Edit", edit_friend_path(@friend)%>
 
-<% @friends.each do |friend| %>
-  <% if policy(friend).edit? %>
-    <%= link_to "Update", edit_friend_path(friend) %>
-  <% end %>
-<% end %>
+    <%# <% @friends.each do |friend| %>
+      <%# if policy(friend).edit? %>
+        <%#= link_to "Update", edit_friend_path(friend) %>
+      <%# end %>
+    <%# end %>
