@@ -6,19 +6,18 @@
     <div class="friend_details">
       <h4>Location: <%= @friend.location %></h4>
       <p>Price to meet: <%= @friend.price %></p>
-      <%= link_to "Meet up with this friend!", new_friend_review_path(@friend) %>
+        <%= link_to "Request to meet up!", new_friend_review_path(@friend), class: "btn btn-primary" %>
     </div>
   </div>
   <div class="friend_reviews">
     <h4>Reviews for: <%= "@friend.name placeholder for now" %></h4>
-    <%= link_to "Leave a review", new_friend_review_path(@friend) %>
+    <%= link_to "Leave a review", new_friend_review_path(@friend), class: "btn btn-primary"%>
   </div>
 
+<br>
+  <%= link_to "Homepage", friends_path(@friend), class: "btn btn-primary"%>
+</div>
 
-<%= link_to "Homepage", friends_path(@friend)%>
-<%= link_to "Edit", edit_friend_path(@friend)%>
-<%= link_to "Leave a review", new_friend_review_path(@friend) %>
-<%= link_to "Update a review", edit_friend_review_path(@friend) %>
 
 
 
