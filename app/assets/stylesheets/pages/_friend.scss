@@ -1,0 +1,14 @@
+.friend_images {
+  display: flex;
+  img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px 10px;
+  }
+}
+
+.friend_details {
+  padding: 10px 0px;
+  align-items: center;
+}
