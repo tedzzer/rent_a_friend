@@ -2,7 +2,7 @@
   <h1><%= @friend.name %>, <%= @friend.age %></h1>
   <h2><%= @friend.description %></h2>
   <div class="friend_images">
-    <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon">
+    <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon" >
     <div class="friend_details">
 
       <h5>Location: <%= @friend.location %></h5>
@@ -21,8 +21,16 @@
     </div>
   </div>
   <div class="friend_reviews">
-    <h4>Reviews for <%= @friend.name %>:</h4>
+
     <%= link_to "Leave a review", new_friend_review_path(@friend), class: "btn btn-primary"%>
+
+    <%# <h4>reviews</h4>
+    <ul class="list-group list-group-flush">
+     <% @friend.reviews.each do |review| %>
+        <%# <li class="list-group-item"><%= review.comment %>
+        <%# <%= review.rating</li> %>
+        <%# <% end %>
+    <%# </ul>  %>
   </div>
 
 <br>
@@ -30,6 +38,20 @@
 </div>
 
 
+<div class="list-group">
+ <% @friend.reviews.each do |review| %>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">from : user <%= rand(24..89) %></h5>
+      <small><%= rand(0..7)%>days ago</small>
+    </div>
+    <p class="mb-1"><ul class="list-group list-group-flush">
+        <%= review.comment %>
+        <%= review.rating %>
+        <% end %>
+      </p>
+  </a>
+</div>
 <%# <%= link_to "Update a review", edit_friend_review_path(@friend) %>
 <%# <%= link_to "Edit", edit_friend_path(@friend)%>
 
