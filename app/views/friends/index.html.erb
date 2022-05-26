@@ -1,4 +1,4 @@
-<div class="index-title"><h1>Available friends</h1></div>
+<div class="index-title"><h1>Friends around you</h1></div>
 
 <div class="container">
   <div class="d-flex justify-content-between row">
@@ -13,13 +13,13 @@
             <p class="card-text"><%=friend.location%></p>
             <p class="card-text"><%=friend.price%>€</p>
 
-            <a><%= link_to "Delete", friend_path(friend), class: "btn btn-danger",
+            <a><%= link_to "Delete", friend_path(friend), class: "btn btn-ghost",
               method: :delete,
               data: { confirm: "Are you sure?" } %>
             </a>
             <a>
               <% if policy(friend).edit? %>
-                <%= link_to "Update", edit_friend_path(friend), class: "btn btn-warning" %>
+                <%= link_to "Update", edit_friend_path(friend), class: "btn btn-ghost" %>
               <% end %>
             </a>
           </div>

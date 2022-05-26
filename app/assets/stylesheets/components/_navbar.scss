@@ -15,3 +15,20 @@
 .nav-item {
   margin: 5px;
 }
+
+
+.btn-ghost {
+  color: #E04D01;
+  border: 1px solid #E04D01;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  color: #E04D01;
+  border: 1px solid #E04D01;
+}
