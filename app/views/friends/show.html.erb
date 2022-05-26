@@ -1,21 +1,31 @@
 <div class="container">
-  <h1><%= @friend.name %>, <%= @friend.age %></h1>
+  <h1><strong><%= @friend.name %>, <%= @friend.age %></strong></h1>
   <h2><%= @friend.description %></h2>
   <div class="friend_images">
     <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon" >
     <div class="friend_details">
 
-      <h5>Location: <%= @friend.location %></h5>
-      <p>Price to meet: <%= @friend.price %></p>
+      <h5><strong>Location: </strong><%= @friend.location %></h5>
+      <p><strong>Price to meet: </strong><%= @friend.price %></p>
       <br>
-      <p>Upcoming meet ups with <%= @friend.name %>:</p>
-      <br>
+<<<<<<< HEAD
       <%# <ul class="list-group"> %>
         <%# <% @reservations.reviews.each do |review| %>
           <%# <li class="list-group-item"><%= review.content</li> %>
         <%# <% end %>
       <%# </ul> %>
       <br>
+=======
+      <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
+      <ul class="list-group">
+        <% @friend.reservations.each do |reservation| %>
+          <li class="list-group-item"><strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
+          <br><strong>Start: </strong><%= reservation.start_date%>
+          <br><strong>End: </strong><%= reservation.end_date %></li>
+          <br>
+        <% end %>
+      </ul>
+>>>>>>> master
       <%= link_to "Request to meet up!", new_friend_reservation_path(@friend), class: "btn btn-primary" %>
 
     </div>
@@ -33,6 +43,7 @@
     <%# </ul>  %>
   </div>
 
+<<<<<<< HEAD
 <br>
 <ul class="list-group list-group-flush">
   <% @friend.reviews.each do |review| %>
@@ -42,6 +53,9 @@
   </li>
     <% end %>
 </ul>
+=======
+  <br>
+>>>>>>> master
   <%= link_to "Find Another Friend", friends_path(@friend), class: "btn btn-outline-primary"%>
 </div>
 
