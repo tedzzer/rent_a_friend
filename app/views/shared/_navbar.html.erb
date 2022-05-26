@@ -8,14 +8,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
+
+          <li><%= link_to "Sign up", new_user_registration_path, class: "btn btn-ghost" %></li>
+
         <% if user_signed_in? %>
-          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-primary nav-item nav-item" %></li>
-          <li><%= link_to "Add friend", new_friend_path, class:"btn btn-outline-primary nav-item nav-item"%></li>
-          <li><%= link_to "My profile", new_friend_path, class:"btn btn-outline-primary nav-item"%></li>
+          <li><%= link_to "Add friend", new_friend_path, class:"btn btn-ghost"%></li>
+          <li><%= link_to "My profile", new_friend_path, class:"btn btn-ghost"%></li>
         <%else %>
-          <li><%= link_to "Log in", new_user_session_path, class: "btn btn-outline-primary nav-item" %></li>
-          <li><%= link_to "Sign up", new_user_registration_path, class: "btn btn-outline-primary nav-item" %></li>
-          <li><%= link_to "Friends Available", friends_path, class:"btn btn-outline-primary nav-item"%></li>
+          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-ghost" %></li>
+          <li><%= link_to "Log in", friends_path, class: "btn btn-ghost" %></li>
+          <li><%= link_to "Friends Available", friends_path, class:"btn btn-ghost" %></li>
         <% end %>
       </ul>
     </div>

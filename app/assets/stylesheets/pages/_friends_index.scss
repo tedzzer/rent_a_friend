@@ -3,6 +3,12 @@
   margin: 0 auto;
   border-radius: 2%;
 }
+
+.card a{
+  color: white;
+  font-family: monospace;
+}
+
 .card-title {
   font-size: large;
   text-align: center;
@@ -14,6 +20,28 @@
 text-align: right;
 font-weight: bold;
 }
+
+
+.index-title{
+  background-color: rgba($color: #242F9B, $alpha: 0.6);
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+
+.card-body{
+  background-color:rgba($color: #9BA3EB, $alpha: 0.6);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+.card-body p{
+ color: rgb(12, 0, 80);
+ font-family: monospace;
+ font-weight: bold;
+}
+
 .btn-ghost {
   color: #4A4A4A;
   border: 1px solid #4A4A4A;
@@ -23,13 +51,7 @@ font-weight: bold;
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
+
 .btn-ghost:hover {
   opacity: 1;
-}
-
-.index-title{
-  background-color: rgb(128, 137, 137);
-  color: white;
-  font-family: monospace;
-  text-align: center;
 }
