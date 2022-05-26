@@ -1,0 +1,536 @@
+[33mcommit 5ee087d8ac7b4ac4b7169b1d7d1e9ff39e8e7788[m[33m ([m[1;36mHEAD -> [m[1;32mreservations_coding[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 3626241 d92f70a
+Author: Meghan Johnson <94846512+emmejyay@users.noreply.github.com>
+Date:   Thu May 26 09:06:48 2022 +0200
+
+    Merge pull request #21 from tedzzer/navbar
+    
+    Navbar login feature
+
+[33mcommit d92f70a7c944ca988ccb99e0e9f3b0cc6b079e9b[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Thu May 26 09:05:44 2022 +0200
+
+    navbar features
+
+[33mcommit a4d3dce464998032897986f6c96f3118ca90b5c4[m
+Merge: b86b7af 3626241
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 16:46:37 2022 +0200
+
+    Merge branch 'master' of github.com:tedzzer/rent_a_friend
+
+[33mcommit 362624112cd55f64af626765687f5a48fb80c1fc[m
+Merge: 6f4a054 6d0ecb2
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 16:38:23 2022 +0200
+
+    Merge pull request #20 from tedzzer/more_css_changes
+    
+    more changes to css and cleanup of navbar code, also linked landing p…
+
+[33mcommit 6d0ecb20b7f3df5cef81fd1698451ff1bc69c59e[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Wed May 25 16:34:19 2022 +0200
+
+    more changes to css and cleanup of navbar code, also linked landing page 'get started'
+
+[33mcommit b86b7af7196351505218a882e0f4467d82e19eb4[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 16:33:57 2022 +0200
+
+    saving after comment applicable.rb
+
+[33mcommit 9c2a83063d382d222229014f47b2298722c33fe5[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 16:25:44 2022 +0200
+
+    saving before pushing on heroku
+
+[33mcommit ee17c5a427a4e8fc7a13c8e28c8d2d0340b16cc1[m
+Merge: a40cfe5 6f4a054
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 16:24:50 2022 +0200
+
+    Merge branch 'master' of github.com:tedzzer/rent_a_friend
+
+[33mcommit a40cfe594dcdac73330b8abd6a6722ae46d0136c[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 16:11:58 2022 +0200
+
+    try to fix zeitwekr action mailer error
+
+[33mcommit 73d1d21f09fa9203c3970a3ce9f2e489c0227dc3[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 16:03:21 2022 +0200
+
+    disable zeitwerk
+
+[33mcommit 6f4a0549d34849c4bc0b8c581aae52d059729c64[m
+Merge: c5c6824 c959a0d
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 15:59:05 2022 +0200
+
+    Merge pull request #19 from tedzzer/show_page_and_css_cleanup
+    
+    "changes to scss and show page"
+
+[33mcommit c959a0d3f3a1cf1a2c1a7e45a3d04cee64e01d5a[m[33m ([m[1;31morigin/show_page_and_css_cleanup[m[33m)[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Wed May 25 15:57:24 2022 +0200
+
+    "changes to scss and show page"
+
+[33mcommit c5c68246a7655f4ccb5ce54130af9376be7b816e[m
+Merge: 5fe2cb8 dad2936
+Author: Meghan Johnson <94846512+emmejyay@users.noreply.github.com>
+Date:   Wed May 25 15:34:36 2022 +0200
+
+    Merge pull request #18 from tedzzer/navbar
+    
+    migration friends done
+
+[33mcommit dad29365546b59d9ae1ef5200c209294c95a6e97[m
+Merge: a5639c8 5fe2cb8
+Author: Meghan Johnson <94846512+emmejyay@users.noreply.github.com>
+Date:   Wed May 25 15:34:22 2022 +0200
+
+    Merge branch 'master' into navbar
+
+[33mcommit 5fe2cb863e9cfedd14eb212dd3bbfd6a91f38088[m
+Merge: 5f7f45a a198566
+Author: Meghan Johnson <94846512+emmejyay@users.noreply.github.com>
+Date:   Wed May 25 15:33:05 2022 +0200
+
+    Merge pull request #17 from tedzzer/index
+    
+    Index
+
+[33mcommit a1985660312c595ed925a8a7df10d057e1130816[m
+Merge: e922158 5f7f45a
+Author: Meghan Johnson <94846512+emmejyay@users.noreply.github.com>
+Date:   Wed May 25 15:32:45 2022 +0200
+
+    Merge branch 'master' into index
+
+[33mcommit a5639c8f8c55249ceec403af01a4c20671b126d1[m
+Merge: 091346e 5f7f45a
+Author: Maxime Japsenne <102742988+MaxiJaps@users.noreply.github.com>
+Date:   Wed May 25 15:32:40 2022 +0200
+
+    Merge branch 'master' into navbar
+
+[33mcommit 5f7f45a089c79cb9dc9d770919d4e34687618544[m
+Merge: 21f1742 7644483
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 15:31:52 2022 +0200
+
+    Merge pull request #16 from tedzzer/friend_show_page_round_2
+    
+    Friend show page round 2
+
+[33mcommit 76444838097d9bd80519959bfa9cc3d2407bfdd1[m
+Merge: f7c194d 21f1742
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 15:31:44 2022 +0200
+
+    Merge branch 'master' into friend_show_page_round_2
+
+[33mcommit e92215831e47843148e8881cc36356560d16889d[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 15:29:33 2022 +0200
+
+    update authorized
+
+[33mcommit f7c194dad6c9d0b7e38f093b1609c346a582e151[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Wed May 25 15:27:05 2022 +0200
+
+    made some changes to the show page buttons
+
+[33mcommit 091346eb7dde392cf23ecc93219ae36e243af760[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Wed May 25 15:26:19 2022 +0200
+
+    migration friends done
+
+[33mcommit be217ec976650595998e367266e45b295809f41d[m
+Merge: 70545d3 21f1742
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 15:12:11 2022 +0200
+
+    Merge branch 'master' into index
+
+[33mcommit 70545d321853c618d2b412fe429ef69cf0c6095e[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 15:11:26 2022 +0200
+
+    index button done
+
+[33mcommit 21f1742c9b5e8d71f54751670297526c8a770f0a[m
+Merge: 2e4ee6a 472b525
+Author: Maxime Japsenne <102742988+MaxiJaps@users.noreply.github.com>
+Date:   Wed May 25 15:09:21 2022 +0200
+
+    Merge pull request #15 from tedzzer/navbar
+    
+    Navbar
+
+[33mcommit 472b525d0b778efd9535121a20865f5b91559f34[m
+Merge: a97c206 2e4ee6a
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Wed May 25 15:08:25 2022 +0200
+
+    navbarrr
+
+[33mcommit a97c2061841e032ca30f3c8ff5cc878cab13ee7d[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Wed May 25 14:46:31 2022 +0200
+
+    saving
+
+[33mcommit e78ac89dbc6d10140a34cf8bda748a2741754e36[m
+Merge: d840832 2e4ee6a
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Wed May 25 14:43:34 2022 +0200
+
+    Merge branch 'master' into friend_show_page_round_2
+
+[33mcommit d840832be9b3356e967386639b10a4b308aa56e5[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Wed May 25 14:39:00 2022 +0200
+
+    testing
+
+[33mcommit 2e4ee6a72430bff0eb476185701872becf0a48be[m
+Merge: 7124855 ffc507a
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 14:37:51 2022 +0200
+
+    Merge pull request #14 from tedzzer/navbar_fix
+    
+    navbar space fixed
+
+[33mcommit ffc507ae3b239e5b08facc6ca315e764358f08bd[m
+Merge: e4dbcc6 7124855
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 14:36:53 2022 +0200
+
+    Merge branch 'master' into navbar_fix
+
+[33mcommit e4dbcc66c0e47986684822c1440fe3299d537572[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 14:35:59 2022 +0200
+
+    navbar space fixed
+
+[33mcommit 7124855b05ce5b878073c7d7b99ce6e394dde198[m
+Merge: 70edfe5 36c171e
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 14:24:29 2022 +0200
+
+    Merge pull request #13 from tedzzer/cards
+    
+    Cards
+
+[33mcommit 36c171ead268831d1fbf847300c25511dd5ac2db[m
+Merge: bfd94d2 70edfe5
+Author: Ted André <elleted@hotmail.com>
+Date:   Wed May 25 14:24:21 2022 +0200
+
+    Merge branch 'master' into cards
+
+[33mcommit bfd94d24ab3d77f6e582622fecdfeaf73e0fa37d[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 14:22:27 2022 +0200
+
+    cards done
+
+[33mcommit 70edfe5402db6f0071fb19a14a10155f12132bc2[m
+Merge: ae3d9cb 1c67e86
+Author: Maxime Japsenne <102742988+MaxiJaps@users.noreply.github.com>
+Date:   Wed May 25 13:48:49 2022 +0200
+
+    Merge pull request #12 from tedzzer/friend_show_page
+    
+    added seed for user and friend, updated friend show page
+
+[33mcommit 1c67e86b80ad63f7c39fca1f403ffb9338ad07b1[m[33m ([m[1;31morigin/friend_show_page[m[33m)[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Wed May 25 12:57:19 2022 +0200
+
+    added seed for user and friend, updated friend show page
+
+[33mcommit ae3d9cb3cba6fddb15ee9aa6da64fa8a7e83d69f[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Wed May 25 11:15:09 2022 +0200
+
+    problems solved
+
+[33mcommit b290aea5ce45616efcdd72efaea1b76f67267509[m
+Merge: e099c78 9078227
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 11:01:37 2022 +0200
+
+    Merge branch 'master' of github.com:tedzzer/rent_a_friend
+
+[33mcommit 9078227944944a74520a6dadfe51cce4bbd86e44[m
+Merge: 685bc77 a66199b
+Author: Maxime Japsenne <102742988+MaxiJaps@users.noreply.github.com>
+Date:   Wed May 25 11:01:15 2022 +0200
+
+    Merge pull request #11 from tedzzer/friends_creation
+    
+    some buttons
+
+[33mcommit a66199bd8a8b668d5c14be55e7176b94a1f41185[m[33m ([m[1;31morigin/friends_creation[m[33m)[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Wed May 25 11:00:07 2022 +0200
+
+    some buttons
+
+[33mcommit e099c7867ff6bae0965923feb482251fa7520e40[m
+Merge: faa7f6c 685bc77
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Wed May 25 10:06:13 2022 +0200
+
+    conflict solved
+
+[33mcommit faa7f6cb64bda29907248fbb6ca08ae1df85927b[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Tue May 24 18:23:57 2022 +0200
+
+    heroku push
+
+[33mcommit 685bc77ddea2b9fb3c4df3147443e4e7dbdf21d0[m
+Merge: 0838a69 cfdfde2
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 17:51:05 2022 +0200
+
+    Merge pull request #10 from tedzzer/review
+    
+    Review
+
+[33mcommit cfdfde2a0e5a84a04e716938912e1425a5ec14c9[m
+Merge: ee731b0 0838a69
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 17:50:56 2022 +0200
+
+    Merge branch 'master' into review
+
+[33mcommit 0838a69401e7e1ba421a1a6e45b8a617e1fa5676[m
+Merge: 1585e59 ad4f609
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 17:40:33 2022 +0200
+
+    Merge pull request #9 from tedzzer/add_reservation_table_and_authorizations
+    
+    added reservation model, controller, and routes.  Started on authoriz…
+
+[33mcommit ad4f60914829aedbeff65b36fb0afbaddd677317[m
+Merge: aa15e2d 1585e59
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 17:40:26 2022 +0200
+
+    Merge branch 'master' into add_reservation_table_and_authorizations
+
+[33mcommit ee731b060eee77631cd99ea806d5339e5130e5fc[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Tue May 24 17:24:20 2022 +0200
+
+    review + authorization done
+
+[33mcommit aa15e2d6c78593a22fb2710a306c9cba021d8724[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Tue May 24 17:23:29 2022 +0200
+
+    added reservation model, controller, and routes.  Started on authorization policies
+
+[33mcommit 1585e597d696f7cb251d34d98c8aa4cc44e40fd9[m
+Merge: 976cd06 56727b0
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 17:18:26 2022 +0200
+
+    Merge pull request #8 from tedzzer/friends_creation
+    
+    log out button done
+
+[33mcommit 56727b090aaa346567c8dc18ab81484f12bba8b8[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 17:14:42 2022 +0200
+
+    log out button done
+
+[33mcommit 976cd0699d86a5a6713b46f472b85e37f27be722[m
+Merge: ef9433e 244be3c
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 17:05:37 2022 +0200
+
+    Merge pull request #7 from tedzzer/friends_creation
+    
+    Friends creation
+
+[33mcommit 244be3c3500a6737d45ce68bbc41876e69f8a601[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 15:52:43 2022 +0200
+
+    save
+
+[33mcommit 3fda6ba20c22a710678cdcc0d57d78b7561cd294[m
+Merge: 7a47e53 ef9433e
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 15:51:34 2022 +0200
+
+    Merge branch 'master' of github.com:tedzzer/rent_a_friend
+
+[33mcommit 7a47e53c3eac6878ef356b8b5330770a34dd448c[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 15:50:43 2022 +0200
+
+    saving
+
+[33mcommit 140bf90ca3b4c66456e4999924b4371ba870d307[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Tue May 24 15:31:18 2022 +0200
+
+    review model created
+
+[33mcommit ef9433e01c3f8268c7ce86776511ddc818f7f7d3[m
+Merge: c82bce4 6da56e5
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Tue May 24 14:24:50 2022 +0200
+
+    Merge branch 'master' of github.com:tedzzer/rent_a_friend
+
+[33mcommit c82bce43fc306c2dc893cd2d3900cf882caad5b2[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Tue May 24 14:24:43 2022 +0200
+
+    fixing gemfile.lock
+
+[33mcommit 6da56e5c52442b3ef2ecf8eb0459840f77b23025[m
+Merge: ec0acf8 4a27682
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 12:56:42 2022 +0200
+
+    Merge pull request #5 from tedzzer/adding_pundit_gem
+    
+    changes to gemfiles for pundit and linux machine
+
+[33mcommit ec0acf89389218fb10f737e8e69cc248dfdaed78[m
+Merge: f9533f9 d278ea5
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 12:56:28 2022 +0200
+
+    Merge pull request #6 from tedzzer/creation_of_friend_model_and_controller
+    
+    Creation of friend model and controller
+
+[33mcommit f9533f91622067c89729b51190fe99dcb590be2f[m
+Merge: cf03b84 ff04ba5
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 12:56:14 2022 +0200
+
+    Merge pull request #4 from tedzzer/validation/navbar_issue
+    
+    Validation/navbar issue
+
+[33mcommit d278ea5bd2401287c1fcbf2865cbaf429897bf4b[m[33m ([m[1;31morigin/creation_of_friend_model_and_controller[m[33m)[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 12:54:05 2022 +0200
+
+    Model, controller and views for friends done
+
+[33mcommit 4a27682268d1b09542a9800878a602cdf820f7a5[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Tue May 24 12:49:24 2022 +0200
+
+    changes to gemfiles for pundit and linux machine
+
+[33mcommit ff04ba5fef7116afda20e381b1154eaa8af4a974[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Tue May 24 12:40:08 2022 +0200
+
+    nav bar overlap fixed
+
+[33mcommit 25d19c024fe625672ce6eb57cd9eca6ce5f1fef8[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 12:34:51 2022 +0200
+
+    updating database
+
+[33mcommit 0342c434a3fb529b3d8473d3e1d611e44ef5bb93[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Tue May 24 12:32:30 2022 +0200
+
+    validation for user implemented
+
+[33mcommit 0a92df37bd62e65ae3b804b803a6ced15bb710c5[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 12:27:32 2022 +0200
+
+    saving
+
+[33mcommit cf03b84df2ca1ff0cd147027e4e41eb1609449ce[m
+Merge: 9aeb768 df62e30
+Author: Ted André <elleted@hotmail.com>
+Date:   Tue May 24 10:44:33 2022 +0200
+
+    Merge pull request #3 from tedzzer/installation_of_gem_devise
+    
+    first part backend
+
+[33mcommit df62e3063dd020a7476b263e9bc6a7a35f996b2a[m
+Merge: 991fad3 9aeb768
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Tue May 24 10:43:51 2022 +0200
+
+    conflit solved
+
+[33mcommit 991fad3fc050b1ea5a7d7f84b0b91f670b7cde25[m
+Author: Maxime Japsenne <japsenne@gmail.com>
+Date:   Tue May 24 10:27:53 2022 +0200
+
+    first part backend
+
+[33mcommit 9aeb7688d6b70e1f09521d98178db4754037bd13[m
+Merge: eda7b37 f53320a
+Author: Ted André <elleted@hotmail.com>
+Date:   Mon May 23 21:21:04 2022 +0200
+
+    Merge pull request #2 from tedzzer/homepage
+    
+    homepage design
+
+[33mcommit f53320a7d7be794f0cbe72e84c8309523d009c1b[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Mon May 23 21:16:22 2022 +0200
+
+    homepage created
+
+[33mcommit eda7b37ddf3eab2d0a0a94ac9430de270b1231b3[m
+Merge: 5f4b054 fa520be
+Author: Ted André <elleted@hotmail.com>
+Date:   Mon May 23 17:55:05 2022 +0200
+
+    Merge pull request #1 from tedzzer/navbar-footer
+    
+    created navbar and footer
+
+[33mcommit fa520beec22cce9f7f38ec6343f144c2bc97aa8b[m
+Author: Meghan Johnson <meghan.h.johnson@gmail.com>
+Date:   Mon May 23 17:42:59 2022 +0200
+
+    created navbar and footer
+
+[33mcommit 73527f841694df4412ef8bfacc6f228028a2f283[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Mon May 23 16:33:37 2022 +0200
+
+    heroku problem fixede
+
+[33mcommit 5f4b054a20c0b445098dbeaf30dcf4a99335da8a[m
+Author: Ted Andre <elleted@hotmail.com>
+Date:   Mon May 23 16:04:20 2022 +0200
+
+    Initial commit with minimal template from https://github.com/lewagon/rails-templates

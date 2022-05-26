@@ -1,12 +1,23 @@
 <div class="container">
-  <h1><%= @friend.name %></h1>
+  <h1><%= @friend.name %>, <%= @friend.age %></h1>
   <h2><%= @friend.description %></h2>
   <div class="friend_images">
     <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon" >
     <div class="friend_details">
-      <h4>Location: <%= @friend.location %></h4>
+
+      <h5>Location: <%= @friend.location %></h5>
       <p>Price to meet: <%= @friend.price %></p>
-        <%= link_to "Request to meet up!", new_friend_review_path(@friend), class: "btn btn-primary" %>
+      <br>
+      <p>Upcoming meet ups with <%= @friend.name %>:</p>
+      <br>
+      <ul class="list-group">
+        <% @reservations.reviews.each do |review| %>
+          <li class="list-group-item"><%= review.content %></li>
+        <% end %>
+      </ul>
+      <br>
+      <%= link_to "Request to meet up!", new_friend_reservation_path(@friend), class: "btn btn-primary" %>
+
     </div>
   </div>
   <div class="friend_reviews">
@@ -41,10 +52,6 @@
       </p>
   </a>
 </div>
-
-
-
-
 <%# <%= link_to "Update a review", edit_friend_review_path(@friend) %>
 <%# <%= link_to "Edit", edit_friend_path(@friend)%>
 
