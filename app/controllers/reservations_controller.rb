@@ -10,8 +10,9 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     @reservation.friend = @friend
+    @reservation.user = current_user
     authorize @reservation
-    if @reservation.save!
+    if @reservation.save
       redirect_to friend_path(@friend)
     else
       render :new
@@ -39,7 +40,7 @@ class ReservationsController < ApplicationController
   private
 
   def set_friend
-    @friend = Friend.find(params[:friend_id])
+    @friend = User.find(params[:friend_id])
   end
 
   def reservation_params

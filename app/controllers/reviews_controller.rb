@@ -1,13 +1,13 @@
 class ReviewsController < ApplicationController
 
   def new
-    @friend = Friend.find(params[:friend_id])
+    @friend = User.find(params[:friend_id])
     @review = Review.new
     authorize @review
   end
 
   def create
-    @friend = Friend.find(params[:friend_id])
+    @friend = User.find(params[:friend_id])
     @review = Review.new(review_params)
     @review.user = current_user
     @review.friend = @friend
@@ -24,7 +24,7 @@ class ReviewsController < ApplicationController
   end
 
   def update
-    @friend = Friend.find(params[:friend_id])
+    @friend = User.find(params[:friend_id])
     @review = Review.find(review_params)
     @review.user = current_user
     if @review.update(review_params)

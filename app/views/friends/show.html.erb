@@ -1,16 +1,14 @@
 <div class="container">
   <h1><strong><%= @friend.name %>, <%= @friend.age %></strong></h1>
-  <h2><%= @friend.description %></h2>
   <div class="friend_images">
     <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon" >
     <div class="friend_details">
 
       <h5><strong>Location: </strong><%= @friend.location %></h5>
-      <p><strong>Price to meet: </strong><%= @friend.price %></p>
       <br>
       <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
       <ul class="list-group">
-        <% @friend.reservations.each do |reservation| %>
+        <% @friend.incoming_reservations.each do |reservation| %>
           <li class="list-group-item"><strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
           <br><strong>Start: </strong><%= reservation.start_date%>
           <br><strong>End: </strong><%= reservation.end_date %></li>
