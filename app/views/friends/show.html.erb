@@ -8,14 +8,6 @@
       <h5><strong>Location: </strong><%= @friend.location %></h5>
       <p><strong>Price to meet: </strong><%= @friend.price %></p>
       <br>
-<<<<<<< HEAD
-      <%# <ul class="list-group"> %>
-        <%# <% @reservations.reviews.each do |review| %>
-          <%# <li class="list-group-item"><%= review.content</li> %>
-        <%# <% end %>
-      <%# </ul> %>
-      <br>
-=======
       <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
       <ul class="list-group">
         <% @friend.reservations.each do |reservation| %>
@@ -25,7 +17,6 @@
           <br>
         <% end %>
       </ul>
->>>>>>> master
       <%= link_to "Request to meet up!", new_friend_reservation_path(@friend), class: "btn btn-primary" %>
 
     </div>
@@ -43,7 +34,6 @@
     <%# </ul>  %>
   </div>
 
-<<<<<<< HEAD
 <br>
 <ul class="list-group list-group-flush">
   <% @friend.reviews.each do |review| %>
@@ -53,9 +43,6 @@
   </li>
     <% end %>
 </ul>
-=======
-  <br>
->>>>>>> master
   <%= link_to "Find Another Friend", friends_path(@friend), class: "btn btn-outline-primary"%>
 </div>
 
