@@ -1,0 +1,15 @@
+<div class= "container">
+  <% @reservations.each do |reservation| %>
+    <li class="list-group-item"><strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
+    <br><strong>Start: </strong><%= reservation.start_date%>
+    <br><strong>End: </strong><%= reservation.end_date %></li>
+    <br><strong>Status: </strong><%= reservation.status %></li>
+    <br>
+  <% end %>
+
+</div>
+<%#
+  <a><%= link_to "Delete", friend_path(friend), class: "btn btn-danger",
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+            <%#/a> %>

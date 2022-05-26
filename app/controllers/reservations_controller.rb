@@ -10,8 +10,11 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     @reservation.friend = @friend
+    @reservation.user = current_user
+
     authorize @reservation
-    if @reservation.save!
+
+    if @reservation.save
       redirect_to friend_path(@friend)
     else
       render :new
@@ -19,24 +22,31 @@ class ReservationsController < ApplicationController
   end
 
   def edit
-    @reservation = Reservation.find(params[:id])
     authorize @reservation
   end
 
   def update
-    @reservation = Reservation.find(params[:id])
-    @reservation.update(reservation_params)
     authorize @reservation
+
+    if params[:accepted].present?
+      @reservation.update(status: params[:accepted])
+    else
+      @reservation.update(reservation_params)
+    end
+
     redirect_to reservations_path
   end
 
   def destroy
-    @reservation = Reservation.find(params[:id])
     @reservation.destroy
     redirect_to reservations_path
   end
 
   private
+
+  def reservation
+    @reservation ||= Reservation.find(params[:id])
+  end
 
   def set_friend
     @friend = Friend.find(params[:friend_id])

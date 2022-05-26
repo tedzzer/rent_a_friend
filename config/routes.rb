@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     resources :reservations, only: %i[new create edit update]
   end
   resources :reservations, only: :destroy
+  get 'dashboard', to: 'pages#dashboard'
 end

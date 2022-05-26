@@ -10,12 +10,6 @@
       <br>
       <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
       <ul class="list-group">
-        <% @friend.reservations.each do |reservation| %>
-          <li class="list-group-item"><strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
-          <br><strong>Start: </strong><%= reservation.start_date%>
-          <br><strong>End: </strong><%= reservation.end_date %></li>
-          <br>
-        <% end %>
       </ul>
       <%= link_to "Request to meet up!", new_friend_reservation_path(@friend), class: "btn btn-primary" %>
 

@@ -3,4 +3,11 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def dashboard
+    @friends = Friend.all
+
+    @reservations = Reservation.all
+  end
+
 end
