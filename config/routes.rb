@@ -3,11 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :friends do
     resources :reviews, only: [ :new, :create, :edit, :update ]
+    resources :reservations, only: [ :new, :create, :edit, :update ]
   end
-  resources :friends do
-    resources :reservations, only: [ :new, :create ]
-  end
-  resources :reservations, only: [ :edit, :update, :destroy ]
+  resources :reservations, only: :destroy
 end
-
-
