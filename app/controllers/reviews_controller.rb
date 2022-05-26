@@ -9,9 +9,9 @@ class ReviewsController < ApplicationController
   def create
     @friend = Friend.find(params[:friend_id])
     @review = Review.new(review_params)
-    @review.friend = @friend
+    @review.user = current_user
     authorize @review
-    if @review.save
+    if @review.save!
       redirect_to friend_path(@friend)
     else
       render :new
