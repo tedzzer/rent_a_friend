@@ -1,15 +1,19 @@
 <div class="container">
   <h1><strong><%= @friend.name %>, <%= @friend.age %></strong></h1>
-  <h2><%= @friend.description %></h2>
   <div class="friend_images">
     <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon" >
     <div class="friend_details">
 
       <h5><strong>Location: </strong><%= @friend.location %></h5>
-      <p><strong>Price to meet: </strong><%= @friend.price %></p>
       <br>
       <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
       <ul class="list-group">
+        <% @friend.incoming_reservations.each do |reservation| %>
+          <li class="list-group-item"><strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
+          <br><strong>Start: </strong><%= reservation.start_date%>
+          <br><strong>End: </strong><%= reservation.end_date %></li>
+          <br>
+        <% end %>
       </ul>
       <%= link_to "Request to meet up!", new_friend_reservation_path(@friend), class: "btn btn-primary" %>
 
@@ -28,25 +32,23 @@
     <%# </ul>  %>
   </div>
 
-  <br>
+<br>
+<ul class="list-group list-group-flush">
+  <% @friend.reviews.each do |review| %>
+  <li class="list-group-item">
+   <%= review.comment %>
+        <%= review.rating %>
+  </li>
+    <% end %>
+</ul>
   <%= link_to "Find Another Friend", friends_path(@friend), class: "btn btn-outline-primary"%>
 </div>
 
 
-<div class="list-group">
- <% @friend.reviews.each do |review| %>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">from : user <%= rand(24..89) %></h5>
-      <small><%= rand(0..7)%>days ago</small>
-    </div>
-    <p class="mb-1"><ul class="list-group list-group-flush">
-        <%= review.comment %>
-        <%= review.rating %>
-        <% end %>
-      </p>
-  </a>
-</div>
+
+
+
+
 <%# <%= link_to "Update a review", edit_friend_review_path(@friend) %>
 <%# <%= link_to "Edit", edit_friend_path(@friend)%>
 

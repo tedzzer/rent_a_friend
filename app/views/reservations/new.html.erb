@@ -1,7 +1,7 @@
 <br>
 <h2>When and How would you like to meet up?<h2>
 <br>
-<%= simple_form_for [ @friend, @reservation ] do |f| %>
+<%= simple_form_for [@friend, @reservation], url: friend_reservations_path, method: :post do |f| %>
   <%= f.input :start_date %>
   <%= f.input :end_date %>
   <%= f.input :location %>

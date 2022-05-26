@@ -10,34 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_26_123240) do
+ActiveRecord::Schema.define(version: 2022_05_26_142306) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "friends", force: :cascade do |t|
-    t.text "description"
-    t.string "location"
-    t.string "price"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.bigint "user_id", null: false
-    t.string "name"
-    t.integer "age"
-    t.index ["user_id"], name: "index_friends_on_user_id"
-  end
-
   create_table "reservations", force: :cascade do |t|
     t.bigint "user_id"
-    t.bigint "friend_id"
     t.datetime "start_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "end_date"
     t.string "location"
     t.text "comment"
-    t.integer "status", default: 0
-    t.index ["friend_id"], name: "index_reservations_on_friend_id"
+    t.bigint "friend_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
 
@@ -45,10 +31,9 @@ ActiveRecord::Schema.define(version: 2022_05_26_123240) do
     t.integer "rating"
     t.text "comment"
     t.bigint "user_id", null: false
-    t.bigint "friend_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["friend_id"], name: "index_reviews_on_friend_id"
+    t.bigint "friend_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
@@ -68,9 +53,6 @@ ActiveRecord::Schema.define(version: 2022_05_26_123240) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "friends", "users"
-  add_foreign_key "reservations", "friends"
   add_foreign_key "reservations", "users"
-  add_foreign_key "reviews", "friends"
   add_foreign_key "reviews", "users"
 end
