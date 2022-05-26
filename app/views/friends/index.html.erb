@@ -3,14 +3,15 @@
 <div class="container">
   <div class="d-flex justify-content-between row">
     <% @friends.each do |friend| %>
-      <%#= link_to friend_path(friend) do %>
         <div class="card" style="width: 18rem;">
+        <%= link_to friend_path(friend) do %>
           <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Card image cap">
+       <% end %>
           <div class="card-body">
-            <h5 class="card-title">friend name to implement</h5>
-            <h5 class="card-title"><%=friend.description%></h5>
+            <p class="card-text"><%=friend.name%></p>
+            <p class="card-text"><%=friend.age%></p>
             <p class="card-text"><%=friend.location%></p>
-            <p class="card-text"><%=friend.price%></p>
+            <p class="card-text"><%=friend.price%>€</p>
 
             <a><%= link_to "Delete", friend_path(friend), class: "btn btn-danger",
               method: :delete,
@@ -21,11 +22,9 @@
                 <%= link_to "Update", edit_friend_path(friend), class: "btn btn-warning" %>
               <% end %>
             </a>
-            <%= link_to "Friend", friend_path(friend), class: "btn btn-primary" %>
           </div>
         </div>
-      <%# end %>
-    <% end %>
+     <%end%>
   </div>
 </div>
 
