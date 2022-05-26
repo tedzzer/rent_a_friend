@@ -1,18 +1,13 @@
-<%= form_for(@friend) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
 
-  <%= f.label :age %>
-  <%= f.text_field :age %>
+<div class= "container">
+  <%= simple_form_for [ @friend ] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :age %>
+    <%= f.input :description %>
+    <%= f.input :location %>
+    <%= f.input :price %>
 
-  <%= f.label :description %>
-  <%= f.text_field :description %>
+    <%= f.submit "Submit ", class: "btn btn-primary" %>
 
-  <%= f.label :location %>
-  <%= f.text_field :location %>
-
-  <%= f.label :price %>
-  <%= f.text_field :price %>
-
-  <%= f.submit %>
-<% end %>
+  <% end %>
+</div>
