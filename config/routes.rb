@@ -7,5 +7,3 @@ Rails.application.routes.draw do
   end
   resources :reservations, only: :destroy
 end
-
-
