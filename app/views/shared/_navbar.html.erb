@@ -11,6 +11,7 @@
         <% if user_signed_in? %>
           <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-ghost" %></li>
           <li><%= link_to "My profile", current_user_path, class:"btn btn-ghost"%></li>
+          <li><%= link_to "Friends Available", friends_path, class:"btn btn-ghost" %></li>
         <%else %>
           <li><%= link_to "Log in", new_user_session_path, class: "btn btn-ghost" %></li>
           <li><%= link_to "Friends Available", friends_path, class:"btn btn-ghost" %></li>
