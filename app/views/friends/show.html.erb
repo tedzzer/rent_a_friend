@@ -1,36 +1,54 @@
+
 <div class="container">
-  <h1><strong><%= @friend.name %>, <%= @friend.age %></strong></h1>
-  <div class="friend_images">
-    <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" alt="Alex Rojon" >
-    <div class="friend_details">
+  <div class="card-product">
+    <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" />
+      <div class="card-product-infos">
+        <h2><strong><%= @friend.name %>, <%= @friend.age %></strong></h2>
+        <p><strong>Location: </strong><%= @friend.location %>.</p>
 
-      <h5><strong>Location: </strong><%= @friend.location %></h5>
-      <br>
-      <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
-      <ul class="list-group">
-        <% @friend.incoming_reservations.each do |reservation| %>
-          <li class="list-group-item"><strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
-          <br><strong>Start: </strong><%= reservation.start_date%>
-          <br><strong>End: </strong><%= reservation.end_date %></li>
+        <div class="friend_details">
+          <h5><strong>Location: </strong><%= @friend.location %></h5>
           <br>
-        <% end %>
-      </ul>
-      <%= link_to "Request to meet up!", new_friend_reservation_path(@friend), class: "btn btn-primary" %>
+          <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
+          <ul class="list-group">
+            <% @friend.incoming_reservations.each do |reservation| %>
+              <li class="list-group-item"><strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
+              <br><strong>Start: </strong><%= reservation.start_date%>
+              <br><strong>End: </strong><%= reservation.end_date %></li>
+              <br>
+            <% end %>
+          </ul>
+           <div class="button-container">
+            <div>
+              <%= link_to "Meet up!", new_friend_reservation_path(@friend), class: "btn btn-ghost" %>
+            </div>
+            <div>
+              <%= link_to "Leave a review", new_friend_review_path(@friend), class: "btn btn-ghost"%>
+            </div>
+            <div>
+              <%= link_to "Find Another Friend", friends_path(@friend), class: "btn btn-ghost"%>
+            </div>
 
-    </div>
+            </div>
+        </div>
+      </div>
   </div>
+</div>
+
+
+
+
   <div class="friend_reviews">
 
-    <%= link_to "Leave a review", new_friend_review_path(@friend), class: "btn btn-primary"%>
+    <%= link_to "Leave a review", new_friend_review_path(@friend), class: "btn btn-ghost"%>
 
-    <%# <h4>reviews</h4>
-    <ul class="list-group list-group-flush">
-     <% @friend.reviews.each do |review| %>
-        <%# <li class="list-group-item"><%= review.comment %>
-        <%# <%= review.rating</li> %>
-        <%# <% end %>
-    <%# </ul>  %>
   </div>
+
+
+
+
+
+
 
 <br>
 <ul class="list-group list-group-flush">
@@ -43,17 +61,3 @@
 </ul>
   <%= link_to "Find Another Friend", friends_path(@friend), class: "btn btn-outline-primary"%>
 </div>
-
-
-
-
-
-
-<%# <%= link_to "Update a review", edit_friend_review_path(@friend) %>
-<%# <%= link_to "Edit", edit_friend_path(@friend)%>
-
-    <%# <% @friends.each do |friend| %>
-      <%# if policy(friend).edit? %>
-        <%#= link_to "Update", edit_friend_path(friend) %>
-      <%# end %>
-    <%# end %>
