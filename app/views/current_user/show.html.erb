@@ -6,9 +6,9 @@
       <p>People I want to meetup with</p>
     </div>
   </div>
-  <div class="list-group">
+  <div class="list-group-1">
       <% current_user.reservations.each do |reservation| %>
-        <div class="list-group-item">
+        <div class="list-group-item-1">
           <strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
           <br><strong>Start: </strong><%= reservation.start_date%>
           <br><strong>End: </strong><%= reservation.end_date %>
@@ -26,9 +26,9 @@
       <p>People who want to meetup with me 👀</p>
     </div>
   </div>
-  <div class="list-group ">
+  <div class="list-group-1 ">
       <% current_user.incoming_reservations.each do |reservation| %>
-        <div class="list-group-item">
+        <div class="list-group-item-1">
           <strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
           <br><strong>Start: </strong><%= reservation.start_date%>
           <br><strong>End: </strong><%= reservation.end_date %>
