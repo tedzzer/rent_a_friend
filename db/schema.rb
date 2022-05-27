@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2022_05_26_142306) do
     t.string "location"
     t.text "comment"
     t.bigint "friend_id"
+    t.integer "status", default: 0
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
 

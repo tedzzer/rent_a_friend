@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  position: sticky;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -18,8 +19,8 @@
 
 
 .btn-ghost {
-  color: #E04D01;
-  border: 1px solid #E04D01;
+  color: #F4F4F4 !important;
+  border: 1px solid #F4F4F4 !important;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
@@ -31,4 +32,8 @@
   opacity: 1;
   color: #E04D01;
   border: 1px solid #E04D01;
+}
+
+.navbar-brand p{
+  color: white;
 }
