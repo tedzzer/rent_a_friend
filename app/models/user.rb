@@ -17,10 +17,6 @@ class User < ApplicationRecord
   validates :location, presence: true, inclusion: { in: COUNTRIES }
   validates :email, presence: true, uniqueness: true
   validates :age, presence: true, numericality: { only_integer: true }
-  validate :password_lower_case
-  validate :password_uppercase
-  validate :password_special_char
-  validate :password_contains_number
 
   def password_uppercase
     return if !!password.match(/\p{Upper}/)
