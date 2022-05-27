@@ -1,12 +1,13 @@
 
 <div class="container">
-    <img src="https://ca.slack-edge.com/T02NE0241-U01J04GQJP8-ea52a14f9618-512" />
-      <div class="card-category">
+  <div class="card-category">
+    <img class= "friend-image" src="https://picsum.photos/600/600"/>
+      <div class="friend_details">
         <h2><strong><%= @friend.name %>, <%= @friend.age %></strong></h2>
-        <p><strong>Location: </strong><%= @friend.location %></p>
+        <h5><strong>Location: </strong><%= @friend.location %></h5>
         <p><strong>About: </strong><%= @friend.personal_description %></p>
 
-        <div class="friend_details">
+        <div>
           <p><strong>Upcoming meet ups with <%= @friend.name %>:</strong></p>
           <ul class="list-group">
             <% @friend.incoming_reservations.each do |reservation| %>
@@ -16,6 +17,9 @@
               <br>
             <% end %>
           </ul>
+        </div>
+      </div>
+    </div>
             <div class="button-container">
                 <div>
                   <%= link_to "Meet up!", new_friend_reservation_path(@friend), class: "btn btn-ghost" %>
