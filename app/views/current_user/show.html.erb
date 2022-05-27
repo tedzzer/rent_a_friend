@@ -1,42 +1,44 @@
 <div class="container">
-  <ul class="list-group">
-    <div class="card-reservation">
-      <img src="https://hotel-de-la-sure.lu/user_images/images/Accueil/reservation2.jpg" />
-      <div class="card-product-infos">
-        <h1>Reservations Requested</h1>
-          <% current_user.reservations.each do |reservation| %>
-          <div class="reservation">
-              <div class="time">
-                <br><strong>Start: </strong><%= reservation.start_date%>
-                <br><strong>End: </strong><%= reservation.end_date %>
-              </div>
-              <div class="infos">
-                <strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
-                <br><strong>Status: </strong><%= reservation.status %>
-              </div>
-            </div>
-          <% end %>
-      </div>
+  <div class="card-reservation">
+    <img src="https://hotel-de-la-sure.lu/user_images/images/Accueil/reservation2.jpg" />
+    <div class="card-product-infos">
+      <h1>Reservations Requested</h1>
+      <p>People I want to meetup with</p>
     </div>
+  </div>
+  <div class="list-group">
+      <% current_user.reservations.each do |reservation| %>
+        <div class="list-group-item">
+          <strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
+          <br><strong>Start: </strong><%= reservation.start_date%>
+          <br><strong>End: </strong><%= reservation.end_date %>
+          <br><strong>Status: </strong><%= reservation.status %>
+        </div>
+      <% end %>
+  </div>
+</div>
 
-    <div class="card-reservation">
-      <img src="https://www.studyrama.com/IMG/arton95383.png" />
-      <div class="card-product-infos">
-        <h1>Reservations Incoming</h1>
-          <% current_user.incoming_reservations.each do |reservation| %>
-          <li class="list-group-item">
-              <strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
-              <br><strong>Start: </strong><%= reservation.start_date%>
-              <br><strong>End: </strong><%= reservation.end_date %>
-              <% if reservation.pending? %>
-                <%= link_to "Accept", url: reservation_path(reservation, accepted: true), method: :put %>
-                <%= link_to "Decline", url: reservation_path(reservation, accepted: false), method: :put %>
-              <% else %>
-               <br><strong>Status: </strong><%= reservation.status %>
-             <% end %>
-           </li>
-        <% end %>
-      </div>
+<div class="container">
+  <div class="card-reservation">
+    <img src="https://www.studyrama.com/IMG/arton95383.png" />
+    <div class="card-product-infos">
+      <h1>Reservations </h1>
+      <p>People who want to meetup with me 👀</p>
     </div>
-  </ul>
+  </div>
+  <div class="list-group ">
+      <% current_user.incoming_reservations.each do |reservation| %>
+        <div class="list-group-item">
+          <strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
+          <br><strong>Start: </strong><%= reservation.start_date%>
+          <br><strong>End: </strong><%= reservation.end_date %>
+          <% if reservation.pending? %>
+            <%= link_to "Accept", url: reservation_path(reservation, accepted: true), method: :put %>
+            <%= link_to "Decline", url: reservation_path(reservation, accepted: false), method: :put %>
+          <% else %>
+            <br><strong>Status: </strong><%= reservation.status %>
+          <% end %>
+        </div>
+      <% end %>
+  </div>
 </div>
