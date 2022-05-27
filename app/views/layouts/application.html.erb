@@ -14,10 +14,10 @@
 
   <body>
     <%= render 'shared/flashes' %>
-    <%= render 'shared/navbar' %>
+    <div class="sticky-top"><%= render 'shared/navbar' %></div>
 
     <%= yield %>
 
-   <%= render 'shared/footer' %>
+   <div class="fixed-bottom"><%= render 'shared/footer' %></div>
   </body>
 </html>
