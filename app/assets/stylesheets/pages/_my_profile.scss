@@ -1,0 +1,77 @@
+.card-reservation {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.card-reservation img {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+}
+
+.card-reservation h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-reservation .card-reservation-infos {
+  padding: 16px;
+}
+
+.reservation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-product-infos {
+  padding-left: 10px;
+}
+
+.resa {
+  padding-top: 13px;
+}
+
+.list-group-item {
+  width: 40%;
+  margin-top: 13px;
+}
+
+.list-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media (min-width: 576px) {
+  .list-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .list-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .list-group {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .list-group {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

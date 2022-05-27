@@ -3,7 +3,11 @@
   <div class="container">
     <h1>Rent a friend!</h1>
     <p>Get out of your confort zone and meet new people!</p>
-    <a class="btn btn-flat" href= "<%= new_user_registration_path%>" >Get started</a>
+    <% if current_user  %>
+      <a class="btn btn-flat" href= "<%= friends_path%>" >Meet some new people</a>
+    <% else %>
+      <a class="btn btn-flat" href= "<%= new_user_registration_path%>" >Get started</a>
+    <% end %>
   </div>
 </div>
 
