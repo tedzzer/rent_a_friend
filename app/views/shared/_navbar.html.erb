@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgKKtbJ6TvVD2MxSE7n3iJsWF9gXJDXZWUQ&usqp=CAU" />  Rent-a-Friend
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgKKtbJ6TvVD2MxSE7n3iJsWF9gXJDXZWUQ&usqp=CAU" /> Rent-a-Friend
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,9 +10,9 @@
       <ul class="navbar-nav me-auto">
 
         <% if user_signed_in? %>
-          <li><%= link_to "My profile", friends_path, class:"btn btn-ghost"%></li>
-        <%else %>
           <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-ghost" %></li>
+          <li><%= link_to "My profile", current_user_path, class:"btn btn-ghost"%></li>
+        <%else %>
           <li><%= link_to "Log in",    new_user_session_path, class: "btn btn-ghost" %></li>
           <li><%= link_to "Friends Available", friends_path, class:"btn btn-ghost" %></li>
         <% end %>
@@ -20,22 +20,3 @@
     </div>
   </div>
 </div>
-
-
-<%# testing navbar %>
-
-          <%# <li class="nav-item active"> %>
-            <%# <%= link_to "Log in", new_user_session_path, class: "btn btn-outline-primary nav-item" %>
-          <%# </li> %>
-          <%# <li class="nav-item"> %>
-             <%# <%= link_to "Sign up", new_user_registration_path, class: "btn btn-outline-primary nav-item" %>
-          <%# </li> %>
-          <%# <li class="nav-item dropdown"> %>
-            <%# <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" /> %>
-            <%# <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"> %>
-              <%# <a class="dropdown-item" href="#">Profile</a> %>
-              <%# <a class="dropdown-item" href="#">Dashboard</a> %>
-              <%# <a class="dropdown-item" href="#">Friends</a> %>
-              <%# <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            <%# </div> %>
-          <%# </li> %>

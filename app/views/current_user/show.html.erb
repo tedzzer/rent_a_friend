@@ -1,0 +1,14 @@
+<div class="container">
+  <ul class="list-group">
+      <% @reservations.each do |reservation| %>
+        <li class="list-group-item">
+          <strong>Loc: </strong><%= reservation.location%> - <%= reservation.comment%>
+          <br><strong>Start: </strong><%= reservation.start_date%>
+          <br><strong>End: </strong><%= reservation.end_date %>
+          <br><strong>Status: </strong><%= reservation.status %>
+          <%= link_to "Accept", url: reservation_path(reservation, accepted: true), method: :put %>
+          <%= link_to "Decline", url: reservation_path(reservation, accepted: false), method: :put %>
+        </li>
+      <% end %>
+    </ul>
+</div>

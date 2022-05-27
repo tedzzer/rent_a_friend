@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
 
 puts "Destroying Data Base"
 if Rails.env.development?
@@ -13,10 +14,10 @@ end
 
 puts "Creating Data Base"
 
-meghan = User.new(name: "Meghan", email: "meghan.h.johnson@gmail.com", password: "Hello1!", location: "Albania", age: "18")
-meghan.save!
-
-alex = User.new(name: "Ted", email: "ted@gmail.com", password: "Hello1!", location: "Belgium", age: "18")
-alex.save!
+30.times do
+  User.create(name: Faker::Name.first_name, age: rand(18..75), location: "Brussels, Belgium",
+              email: Faker::Internet.email, personal_description: Faker::Hipster.sentence(word_count: 3),
+              password: "Hello1!")
+end
 
 puts "Data Base Created!"
